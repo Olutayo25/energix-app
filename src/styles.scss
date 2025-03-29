@@ -1,0 +1,113 @@
+/* src/styles.scss */
+// Define Variables
+$primary-color: #007bff;
+$secondary-color: #f4f4f4;
+$text-color: #333;
+$border-radius: 10px;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.step {
+  h2 {
+    color: $text-color;
+    margin-bottom: 15px;
+  }
+}
+
+input {
+  width: calc(100% - 20px); // Ensure input fields stay within container
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Equipment List Section
+.equipment-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  background: $primary-color;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.equipment-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0;
+  flex-wrap: wrap;
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+// Ensure Equipment List Layout Stays Compact
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .equipment-header {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .equipment-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+    input {
+      width: 100%;
+    }
+  }
+}
