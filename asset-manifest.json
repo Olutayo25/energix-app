@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/energix-app/static/css/main.d3dbe4d0.css",
+    "main.js": "/energix-app/static/js/main.6e4033ab.js",
+    "static/js/488.f649c23d.chunk.js": "/energix-app/static/js/488.f649c23d.chunk.js",
+    "service-worker.js": "/energix-app/service-worker.js",
+    "static/media/logo.svg": "/energix-app/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
+    "index.html": "/energix-app/index.html",
+    "main.d3dbe4d0.css.map": "/energix-app/static/css/main.d3dbe4d0.css.map",
+    "main.6e4033ab.js.map": "/energix-app/static/js/main.6e4033ab.js.map",
+    "488.f649c23d.chunk.js.map": "/energix-app/static/js/488.f649c23d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3dbe4d0.css",
+    "static/js/main.6e4033ab.js"
+  ]
+}
